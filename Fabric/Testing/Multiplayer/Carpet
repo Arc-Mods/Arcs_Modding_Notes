@@ -1,0 +1,18 @@
+Covers a simple section for running some testing using Carpet
+
+- Fake Players, can be controlled via the commands for them.
+    To summon one, run this command in-game.
+
+    /player [name or UUID] spawn
+
+- Do note that there is an option to have the fake player spawned in
+  any gamemode or at any coordinate, generally, spawn the player in survival.
+
+    /player [name/UUID] spawn in survival
+
+- This also applies for the coordinate, using:
+
+    /player [Name/UUID] spawn at [coord]
+
+- Another thing to note: The player will be removed from the server/world after dying,
+  leaving a player left message, since Single-player runs an integrated server.
