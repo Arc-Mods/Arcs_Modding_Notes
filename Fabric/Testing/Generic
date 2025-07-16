@@ -1,0 +1,7 @@
+Covers generic testing, primarily multiplayer.
+
+- Methods for testing in multiplayer include using
+  LAN + Multiple instances
+  Carpet (Fake Players)
+
+- More will be added later
