@@ -4,4 +4,4 @@ This section covers notes for Item classes.
     For Example: "BasemodItems"
 - This is good because it defines the mod's name, "Basemod" and suffixes "Items" to indicate that it is an Item registration class.
 
-- If an item has its own class for special functionality,
+- If an item has its own class for special functionality, make sure in the Items class ("BasemodItems") instead of using "new Item()", use "new BaseItem()"

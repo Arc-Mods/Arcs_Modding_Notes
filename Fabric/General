@@ -1,3 +1,7 @@
 Covers general notes for Fabric
 
-- Generally, I recommend standardizing using Fabric Loader version "0.16.10" in your
+- Generally, I recommend standardizing using Fabric Loader version "0.16.10" in your "fabric.mod.json" file, as well as your "gradle.properties" file.
+    This is because not all of the newest versions of fabric can support later versions, so using a slightly older one that most (if not all) versions of Minecraft can use
+    is a generally good idea.
+
+- If you want to add dependencies to your mod, such as Reach Entity Attributes, always check the GitHub repository for it, it will usually contain what you need in order to add it.

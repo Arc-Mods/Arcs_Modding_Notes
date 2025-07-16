@@ -1,0 +1,22 @@
+Covers notes for adding Reach Entity Attributes into a 1.19.2 project.
+
+- Under "build.gradle" in dependencies, this line will be used.
+
+    `modImplementation("com.jamieswhiteshirt:reach-entity-attributes:${project.rea_version}")`
+
+- To define "rea_version" place this under your dependencies section in "gradle.properties"
+
+    `rea_version=2.3.0`
+
+- This version of REA is used for 1.19.2, also iin "build.gradle" under repositories, place:
+
+    `maven {
+     		url "https://maven.jamieswhiteshirt.com/libs-release"
+     		content {
+     			includeGroup "com.jamieswhiteshirt"
+     		}
+     	}`
+
+- This defines the maven artifactory for REA and where the gradle project defines the dependency from.
+
+- To implement these changes, simply re-sync your gradle project.
