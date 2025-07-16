@@ -1,0 +1,7 @@
+This section covers notes for Item classes.
+
+- If an Item class is made, name it using your mod's name or ID and then suffix Items, rather than "ModItems" since it can conflict with other mods.
+    For Example: "BasemodItems"
+- This is good because it defines the mod's name, "Basemod" and suffixes "Items" to indicate that it is an Item registration class.
+
+- If an item has its own class for special functionality,
