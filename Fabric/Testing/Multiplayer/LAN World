@@ -1,6 +1,6 @@
 Covers the usage of multiple instances + LAN World.
 
-- To run multiple instances for testing, edit you run configuration for the client
+- To run multiple instances for testing, edit your run configuration for the client
   to allow the usage of multiple instances, then confirm your changes.
 
 - After, on your main client, share the world to LAN.
