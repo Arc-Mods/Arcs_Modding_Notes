@@ -1,0 +1,19 @@
+Basic Tooltips
+
+- Basic tooltips can be added using a simple @Override method into "appendToolTip()"
+  For example:
+
+`@Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.literal("Tooltip Text #1").formatted(Formatting.GRAY));
+        tooltip.add(Text.literal("Tooltip Subtext ").formatted(Formatting.DARK_GRAY));
+    }`
+
+- Note that a line indent can be added using "\n" then continuing the text.
+  For example:
+
+`@Override
+    public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
+        tooltip.add(Text.literal("Basic sword meant to \n prioritize mobility").formatted(Formatting.GRAY));
+        tooltip.add(Text.literal("Right click to launch yourself forward quickly.").formatted(Formatting.DARK_GRAY));
+    }`
