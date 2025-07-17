@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "basemod",
+	"version": "${version}",
+	"name": "Basemod",
+	"description": "A base mod description",
+	"authors": [
+		"Name"
+	],
+  "contributors":[
+    "Names"
+  ],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "License, usually ARR, CC0-1.0, or MIT",
+	"icon": "assets/basemod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.name.Basemod"
+		],
+    "client":[
+      "net.name.client.BasemodClient"
+    ],
+		"fabric-datagen": [
+			"net.name.BasemodDataGenerator"
+		]
+	},
+	"mixins": [
+		"basemod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.10",
+		"minecraft": "~1.19.2",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
