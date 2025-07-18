@@ -1,0 +1,21 @@
+- To add Cardinal Components API to a 1.20.1 project, insert the following lines into your "build.gradle" and "gradle.properties" files.
+
+- Insert this into "build.gradle" under "repositories":
+
+maven {
+        name = "Ladysnake Mods"
+        url = 'https://maven.ladysnake.org/releases'
+    }
+
+- Insert this into "build.gradle" under "dependencies":
+
+modImplementation "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}"
+ include "dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}"
+
+- Note, this also applies to "cardinal-component-entity" and "cardinal-components-world"
+
+- Insert this into "gradle.properties" under your "dependencies" section :
+
+  cca_version=5.2.3
+
+- To apply changes, simply re-sync your gradle project.
